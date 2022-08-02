@@ -6,9 +6,9 @@ const ShippingInfo = () => {
   const [country, setCountry] = useState("Poland")
   return (
     <div className='m-6'>
-      <h1>
+      <span>
         Shipping and Payment
-      </h1>
+      </span>
       <div className='flex mt-12 w-[60%]'>
         <button className='bg-teal-400 text-white hover:bg-teal-500 m-1 p-2 rounded-full w-full'>
           Log in
@@ -17,9 +17,11 @@ const ShippingInfo = () => {
           Sign up
         </button>
       </div>
-      <h1 className='mt-6'>
+
+      <div className='mt-6'>
+      <span className='mt-6'>
         Shipping Information
-      </h1>
+      </span>
       <div className="grid grid-cols-2 gap-x-4 gap-y-6 w-full mt-6">
         <div>
             <input className='border rounded rounded-full w-full p-2' placeholder='Email' />
@@ -55,15 +57,16 @@ const ShippingInfo = () => {
 
   <div hidden={selectCountry} className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
     <div className="py-1" role="none">
-      <h1 onClick={ () => {setCountry("India");setselectCountry(!selectCountry)}} 
+      <span onClick={ () => {setCountry("India");setselectCountry(!selectCountry)}} 
         className="cursor-pointer hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">
         India
-      </h1>
-      <h1 onClick={ () => {setCountry("Poland");setselectCountry(!selectCountry)}} 
+      </span>
+      <span onClick={ () => {setCountry("Poland");setselectCountry(!selectCountry)}} 
         className="cursor-pointer hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">
         Poland
-      </h1>
+      </span>
     </div>
+  </div>
   </div>
 </div>
 

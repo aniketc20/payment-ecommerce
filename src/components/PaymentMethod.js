@@ -15,9 +15,9 @@ const PaymentMethod = () => {
   const [delivery, setDelivery] = useState("")
   return (
     <div className='mt-24 ml-6'>
-      <h1>
+      <span>
         Payment Method
-      </h1>
+      </span>
       <div className="grid grid-cols-3 gap-x-4 gap-y-3 mt-6 mr-16">
         <button onClick={() => { setPayment("paypal") }} className={"rounded-full border-gray-200 border px-4 hover:bg-yellow-500 " +  (payment==="paypal" ? "bg-yellow-500" : "")} >
           <img src={PaypalIcon} className='h-12 w-16' alt='shirt' />
@@ -39,39 +39,43 @@ const PaymentMethod = () => {
         </button>
       </div>
       
-      <h1 className='mt-12 mr-16'>
-        Delivery Method
-      </h1>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-3 mt-6 mr-16">
-        <button onClick={() => { setDelivery("inPost") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="inPost" ? "bg-yellow-500" : "")}>
-          <img src={InPostIcon} className='h-12 w-16' />
-          <h1 className=''>
-            $10.00
-          </h1>
-        </button>
-        <button onClick={() => { setDelivery("Dpd") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="Dpd" ? "bg-yellow-500" : "")}>
-          <img src={DpdIcon} className='h-12 w-16' />
-          <h1 className=''>
-            $12.00
-          </h1>
-        </button>
-        <button onClick={() => { setDelivery("Dhl") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="Dhl" ? "bg-yellow-500" : "")}>
-          <img src={DhlIcon} className='h-12 w-16' />
-          <h1 className=''>
-            $20.00
-          </h1>
-        </button>
-        <button onClick={() => { setDelivery("FedEx") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="FedEx" ? "bg-yellow-500" : "")}>
-          <img src={FedExIcon} className='h-12 w-16' />
-          <h1 className=''>
-            $15.00
-          </h1>
-        </button>
-      </div>
-      <div className='flex flex-row-reverse mt-24'>
-        <button className='p-2 rounded-full hover:bg-gray-300 border-black border w-[60%]'>
-          Continue Shopping
-        </button>
+      {/* Delivery method */}
+      <div className='mt-12'>
+
+        <span>
+          Delivery Method
+        </span>
+        <div className="grid grid-cols-2 gap-x-4 gap-y-3 mt-6 mr-16">
+          <button onClick={() => { setDelivery("inPost") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="inPost" ? "bg-yellow-500" : "")}>
+            <img src={InPostIcon} className='h-12 w-16 py-1' />
+            <span className=''>
+              $10.00
+            </span>
+          </button>
+          <button onClick={() => { setDelivery("Dpd") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="Dpd" ? "bg-yellow-500" : "")}>
+            <img src={DpdIcon} className='h-12 w-16 py-2' />
+            <span className=''>
+              $12.00
+            </span>
+          </button>
+          <button onClick={() => { setDelivery("Dhl") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="Dhl" ? "bg-yellow-500" : "")}>
+            <img src={DhlIcon} className='h-12 w-16' />
+            <span className=''>
+              $20.00
+            </span>
+          </button>
+          <button onClick={() => { setDelivery("FedEx") }} className={"rounded-full border-gray-200 border justify-evenly items-center flex hover:bg-yellow-500 " +  (delivery==="FedEx" ? "bg-yellow-500" : "")}>
+            <img src={FedExIcon} className='h-12 w-16' />
+            <span className=''>
+              $15.00
+            </span>
+          </button>
+        </div>
+        <div className='flex flex-row-reverse mt-24'>
+          <button className='p-2 rounded-full hover:bg-gray-300 border-black border w-[60%]'>
+            Continue Shopping
+          </button>
+        </div>
       </div>
     </div>
   )

@@ -4,12 +4,13 @@ const Header = () => {
   return (
     <div className='flex justify-between border border-b-2'>
         <div className='p-6 font-bold'>
-            <h1>
-                <h2 className='text-yellow-500 inline'>
+            <span>
+                <img src='https://thumbs.dreamstime.com/b/shopping-website-icon-basket-65019751.jpg' className='w-8 h-8 inline rounded'/>
+                <h2 className='text-yellow-500 inline ml-2'>
                 E
                 </h2>
                 -Shop
-            </h1>
+            </span>
         </div>
         <div className="flex justify-evenly gap-12 p-6">
             <div>

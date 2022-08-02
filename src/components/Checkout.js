@@ -16,7 +16,7 @@ const Checkout = () => {
       currency: "INR",
       name: "E-commerce Website",
       description: "Test Transaction",
-      image: "https://example.com/your_logo",
+      image: "https://thumbs.dreamstime.com/b/shopping-website-icon-basket-65019751.jpg",
       order_id: "order_K0iWdsRGvJdTa9",
       handler: (res) => {
         console.log(res);
@@ -45,9 +45,11 @@ const Checkout = () => {
         <div className="flex-grow border-t-2 border-gray-200 mt-3"></div>
         <i className="fa fa-shopping-cart p-2 rounded-full bg-green-200" aria-hidden="true"></i>
       </div>
-      <h1 className='mt-10'>
+
+      <div className='mt-10'>
+      <span>
         Your Cart
-      </h1>
+      </span>
       <div className='flex mt-4 justify-between'>
         <div className='flex'>
             <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2019/12/12/1aab2a18-6774-4f83-b292-fe301755a3351576102551329-1.jpg" 
@@ -55,27 +57,28 @@ const Checkout = () => {
             alt='shirt' />
             <div className='flex flex-col text-sm ml-3'>
             <div>
-                <h1>
+                <span>
                     T-Shirt
-                </h1>
+                </span>
             </div>
             <div>
-                <h1>
+                <span>
                     Summer vibes
-                </h1>
+                </span>
             </div>
             <div className='text-slate-400 mt-2 mr-12'>
-                <h1>
+                <span>
                     #261323
-                </h1>
+                </span>
             </div>
         </div>
         </div>
         <div>
-            <h1>
+            <span>
                 $81.99
-            </h1>
+            </span>
         </div>
+      </div>
       </div>
 
       <div className='flex mt-4 justify-between'>
@@ -85,37 +88,37 @@ const Checkout = () => {
             alt='shirt' />
             <div className='flex flex-col text-sm ml-3'>
             <div>
-                <h1>
+                <span>
                     T-Shirt
-                </h1>
+                </span>
             </div>
             <div>
-                <h1>
+                <span>
                     Summer vibes
-                </h1>
+                </span>
             </div>
             <div className='text-slate-400 mt-2 mr-12'>
-                <h1>
+                <span>
                     #261323
-                </h1>
+                </span>
             </div>
         </div>
         </div>
         <div>
-            <h1>
+            <span>
                 $81.99
-            </h1>
+            </span>
         </div>
       </div>
 
       {/* Total cost */}
       <div className='rounded-full bg-slate-200 flex justify-evenly p-3 mt-16 mx-4'>
-        <h1>
+        <span>
             Total cost
-        </h1>
-        <h1>
+        </span>
+        <span>
             $159.99
-        </h1>
+        </span>
       </div>
       <div className='flex mt-40'>
         <button onClick={handlePayment} className='bg-teal-400 text-white hover:bg-teal-500 ml-2 p-2 rounded-full w-[80%]'>
