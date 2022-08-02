@@ -118,7 +118,7 @@ const Checkout = () => {
         </h1>
       </div>
       <div className='flex mt-40'>
-        <button onClick={handlePayment} className='bg-teal-400 text-white hover:bg-teal-500 ml-2 p-2 rounded-full hover:bg-gray-300 w-[60%]'>
+        <button onClick={handlePayment} className='bg-teal-400 text-white hover:bg-teal-500 ml-2 p-2 rounded-full w-[80%]'>
           Proceed to Payment
         </button>
       </div>
