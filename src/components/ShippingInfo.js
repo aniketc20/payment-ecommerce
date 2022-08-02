@@ -9,52 +9,38 @@ const ShippingInfo = () => {
       <h1>
         Shipping and Payment
       </h1>
-      <div className='flex mt-12'>
-        <button className='bg-teal-400 text-white hover:bg-teal-500 m-1 p-2 rounded-full w-[30%]'>
+      <div className='flex mt-12 w-[60%]'>
+        <button className='bg-teal-400 text-white hover:bg-teal-500 m-1 p-2 rounded-full w-full'>
           Log in
         </button>
-        <button className='p-2 rounded-full hover:bg-gray-300 border-gray-200 border w-[30%]'>
+        <button className='p-2 rounded-full hover:bg-gray-300 border-gray-200 border w-full'>
           Sign up
         </button>
       </div>
       <h1 className='mt-6'>
         Shipping Information
       </h1>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-6 w-[500px] mt-6">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-6 w-full mt-6">
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='Email'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='Email' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='Address'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='Address' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='First Name'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='First Name' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='City'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='City' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='Last Name'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='Last Name' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='Postal code/Zip'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='Postal code/Zip' />
         </div>
         <div>
-            <input className='border rounded rounded-full w-full p-2' placeholder='Phone number'>
-
-            </input>
+            <input className='border rounded rounded-full w-full p-2' placeholder='Phone number' />
         </div>
 <div className="relative inline-block text-left">
   <div>
